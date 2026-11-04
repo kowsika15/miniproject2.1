@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book & Reports</title>
+    <link rel="stylesheet" href="../css/returnbook.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="brand">
+        <div class="logo">📚</div>
+        <div>
+            <h2>Digital Library</h2>
+            <p>Management System</p>
+        </div>
+    </div>
+    <span class="admin">Admin Panel</span>
+</header>
+
+<main class="container">
+
+    <div class="page-heading">
+        <div>
+            <p class="subtitle">LIBRARY MANAGEMENT</p>
+            <h1>Return Book & Reports</h1>
+            <p class="description">
+                Manage returned books and view library activity.
+            </p>
+        </div>
+    </div>
+
+    <section class="stats">
+        <div class="stat-card">
+            <div class="stat-icon purple">📚</div>
+            <div>
+                <p>Total Books</p>
+                <h2 id="totalBooks">0</h2>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon orange">👥</div>
+            <div>
+                <p>Total Members</p>
+                <h2 id="totalMembers">0</h2>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon green">📖</div>
+            <div>
+                <p>Available Books</p>
+                <h2 id="availableBooks">0</h2>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon blue">↗</div>
+            <div>
+                <p>Issued Books</p>
+                <h2 id="issuedBooks">0</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-heading">
+            <h2>Return Book</h2>
+            <p>Select an issued book to complete its return.</p>
+        </div>
+
+        <form id="returnForm">
+            <div class="form-grid">
+                <div class="field">
+                    <label for="issuedBook">Select Issued Book</label>
+                    <select id="issuedBook" required>
+                        <option value="">Select an issued book</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="returnDate">Return Date</label>
+                    <input type="date" id="returnDate" required>
+                </div>
+            </div>
+
+            <div id="message" class="message"
+                 role="status" aria-live="polite"></div>
+
+            <div class="form-actions">
+                <button type="reset" class="secondary-btn">Clear</button>
+                <button type="submit" class="primary-btn">
+                    ✓ Return Book
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <section class="panel">
+        <div class="panel-heading">
+            <h2>Library Reports</h2>
+            <p>Summary of books and borrowing activity.</p>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>MEMBER NAME</th>
+                        <th>BOOK NAME</th>
+                        <th>ISSUE DATE</th>
+                        <th>RETURN DATE</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+                <tbody id="reportTable"></tbody>
+            </table>
+        </div>
+
+        <p class="table-footer" id="reportCount">
+            0 records
+        </p>
+    </section>
+
+    <footer>© 2026 Digital Library Management System</footer>
+
+</main>
+
+<script src="../javascript/returnbook.js"></script>
+</body>
+</html>

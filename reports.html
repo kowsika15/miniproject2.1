@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Reports</title>
+    <link rel="stylesheet" href="../css/reports.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>📚 Digital Library Management System</h1>
+        <p>Admin Panel</p>
+    </header>
+
+    <main>
+        <h2>Library Reports</h2>
+        <p class="subtitle">Library activity summary and statistics.</p>
+
+        <section class="report-grid">
+            <div class="report-card blue">
+                <h3>Total Books</h3>
+                <p id="totalBooks">0</p>
+            </div>
+
+            <div class="report-card purple">
+                <h3>Total Members</h3>
+                <p id="totalMembers">0</p>
+            </div>
+
+            <div class="report-card green">
+                <h3>Available Books</h3>
+                <p id="availableBooks">0</p>
+            </div>
+
+            <div class="report-card orange">
+                <h3>Issued Books</h3>
+                <p id="issuedBooks">0</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Issued Books Details</h3>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Member Name</th>
+                            <th>Book Name</th>
+                            <th>Quantity</th>
+                            <th>Issue Date</th>
+                            <th>Return Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reportTable"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <a class="back-link" href="returnbook.html">← Back to Return Book</a>
+    </main>
+</div>
+
+<script src="../javascript/reports.js"></script>
+</body>
+</html>

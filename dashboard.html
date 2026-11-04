@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library Management System</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="logo">📚 Digital Library</div>
+        <div class="admin">Admin Panel</div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>MAIN MENU</h3>
+
+            <a href="dashboard.html" class="menu active" data-page="Dashboard">🏠 Dashboard</a>
+            <a href="book1.html" class="menu" data-page="Books">📚 Books</a>
+            <a href="members.html" class="menu" data-page="Members">👥 Members</a>
+            <a href="#" class="menu" data-page="Issue Book">📖 Issue Book</a>
+            <a href="#" class="menu" data-page="Return Book">↩ Return Book</a>
+            <a href="#" class="menu" data-page="Reports">📊 Reports</a>
+            <a href="#" class="menu" data-page="About">ℹ About</a>
+            <a href="index.html" class="menu logout" data-page="Logout">🚪 Logout</a>
+        </aside>
+
+        <main class="content">
+            <div id="pageContent">
+                <h1>Dashboard</h1>
+                <p class="subtitle">Welcome to Digital Library Management System</p>
+
+                <div class="cards">
+                    <div class="card blue">
+                        <span>📚</span>
+                        <h3>Total Books</h3>
+                        <p>1,250</p>
+                    </div>
+
+                    <div class="card green">
+                        <span>👥</span>
+                        <h3>Total Members</h3>
+                        <p>320</p>
+                    </div>
+
+                    <div class="card orange">
+                        <span>📖</span>
+                        <h3>Books Issued</h3>
+                        <p>85</p>
+                    </div>
+
+                    <div class="card red">
+                        <span>↩</span>
+                        <h3>Books Returned</h3>
+                        <p>60</p>
+                    </div>
+                </div>
+
+                <section class="panel">
+                    <h2>Library Overview</h2>
+                    <p>Welcome to the Digital Library Management System dashboard.</p>
+                    <p>Manage books, members, issue records, returns and reports from one place.</p>
+                </section>
+
+                <section class="panel">
+                    <h2>Quick Navigation</h2>
+                    <div class="quick-links">
+                        <button data-go="Books">View Books</button>
+                        <button data-go="Members">View Members</button>
+                        <button data-go="Issue Book">Issue a Book</button>
+                        <button data-go="Reports">View Reports</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        © 2026 Digital Library Management System
+    </footer>
+
+    <script src="../javascript/dashboard.js"></script>
+</body>
+</html>

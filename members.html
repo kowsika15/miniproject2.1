@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Management - Digital Library</title>
+    <link rel="stylesheet" href="../css/member.css">
+    <script src="../javascript/member.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <div>
+            <h2>📚 Digital Library</h2>
+            <p>Management System</p>
+        </div>
+        <span class="admin">Admin Panel</span>
+    </header>
+
+    <main class="main-content">
+
+        <div class="page-heading">
+            <div>
+                <p class="small-title">LIBRARY MANAGEMENT</p>
+                <h1>Member Management</h1>
+                <p>Manage library members and their information.</p>
+            </div>
+            <a href="dashboard.html" class="back-btn">← Dashboard</a>
+        </div>
+
+        <section class="form-section">
+            <h2 id="formTitle">➕ Add New Member</h2>
+
+            <form id="memberForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>Member ID</label>
+                        <input type="text" id="memberId"
+                               placeholder="Enter Member ID" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="memberName"
+                               placeholder="Enter Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Department</label>
+                        <input type="text" id="department"
+                               placeholder="Enter Department" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email"
+                               placeholder="Enter Email Address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" id="mobile"
+                               placeholder="Enter 10 Digit Mobile Number"
+                               maxlength="10" required>
+                    </div>
+
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" id="submitBtn" class="add-btn">
+                        Add Member
+                    </button>
+
+                    <button type="button" id="cancelBtn"
+                            class="cancel-btn" hidden>
+                        Cancel
+                    </button>
+                </div>
+
+                <p id="message"></p>
+
+            </form>
+        </section>
+
+        <section class="table-section">
+
+            <div class="table-heading">
+                <div>
+                    <h2>👥 View Members</h2>
+                    <p>All registered library members</p>
+                </div>
+
+                <input type="search" id="searchMember"
+                       placeholder="🔍 Search Members...">
+            </div>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Member ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="memberTable">
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="emptyMessage">No members found. Add your first member!</p>
+
+            <div class="total-members">
+                Total Members: <span id="totalMembers">0</span>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

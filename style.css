@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #263449;
+    line-height: 1.6;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background-color: #172554;
+    padding: 18px 7%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #93c5fd;
+}
+
+
+/* Banner Section */
+
+.banner {
+    min-height: 480px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #1d4ed8,
+        #60a5fa
+    );
+
+    color: white;
+}
+
+.banner-content {
+    max-width: 800px;
+}
+
+.banner-content h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #eff6ff;
+}
+
+
+/* Get Started Button */
+
+.get-started {
+    display: inline-block;
+
+    padding: 14px 32px;
+
+    background-color: white;
+    color: #1d4ed8;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 8px;
+    border: 2px solid white;
+
+    transition: 0.3s;
+}
+
+.get-started:hover {
+    background-color: #172554;
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* About Section */
+
+.about {
+    padding: 65px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.about h2 {
+    color: #172554;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+
+    color: #64748b;
+    font-size: 17px;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        min-height: 420px;
+    }
+
+    .banner-content h1 {
+        font-size: 34px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+}

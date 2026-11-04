@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        to bottom right,
+        #263b75,
+        #5571b8
+    );
+}
+
+
+.login-container {
+    width: min(380px, calc(100% - 32px));
+
+    background-color: #f5f5f5;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.logo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+.logo-icon {
+    font-size: 28px;
+}
+
+
+.logo-text {
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #30467c;
+}
+
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    font-size: 26px;
+}
+
+
+form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+label {
+    font-weight: bold;
+
+    margin-top: 10px;
+
+    margin-bottom: 7px;
+}
+
+
+input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #c5c5c5;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #30467c;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.account-text {
+    text-align: center;
+
+    margin-top: 12px;
+}
+
+
+.register-btn {
+    display: block;
+
+    width: 130px;
+
+    text-align: center;
+
+    margin: 10px auto;
+
+    padding: 12px;
+
+    background-color: #ffd27a;
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 10px;
+}
+
+
+.back-home {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    color: #30467c;
+
+    text-decoration: none;
+}
+
+#errorMessage {
+    min-height: 1.5em;
+    margin-top: 12px;
+}
+
+.login-container > p {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.login-container a {
+    color: #30467c;
+}

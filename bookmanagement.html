@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management System</title>
+    <link rel="stylesheet" href="../css/bookmanagement.css">
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>📚 Library</h2>
+        <p class="admin">ADMIN PANEL</p>
+
+        <a href="#" class="active">📖 Book Management</a>
+        <a href="#">👥 Members</a>
+        <a href="#">📕 Issue Books</a>
+        <a href="#">📋 Reports</a>
+        <a href="#">⚙ Settings</a>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h2>Book Management</h2>
+                <p>Library Management System</p>
+            </div>
+            <div class="profile">👤 Admin</div>
+        </header>
+
+        <section class="welcome">
+            <h1>Book Management Module</h1>
+            <p>Manage your library book records easily.</p>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h3>📚 Total Books</h3>
+                <h2 id="totalBooks">120</h2>
+            </div>
+
+            <div class="stat-card">
+                <h3>📗 Available Quantity</h3>
+                <h2 id="totalQuantity">160</h2>
+            </div>
+
+            <div class="stat-card">
+                <h3>📂 Categories</h3>
+                <h2 id="totalCategories">5</h2>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2 id="formTitle">➕ Add New Book</h2>
+
+            <form id="bookForm">
+
+                <div class="form-grid">
+
+                    <div>
+                        <label>Book ID</label>
+                        <input type="text" id="bookId"
+                        placeholder="Enter Book ID" required>
+                    </div>
+
+                    <div>
+                        <label>Book Name</label>
+                        <input type="text" id="bookName"
+                        placeholder="Enter Book Name" required>
+                    </div>
+
+                    <div>
+                        <label>Author</label>
+                        <input type="text" id="author"
+                        placeholder="Enter Author" required>
+                    </div>
+
+                    <div>
+                        <label>Category</label>
+                        <select id="category" required>
+                            <option value="">Select Category</option>
+                            <option>Programming</option>
+                            <option>Fiction</option>
+                            <option>Science</option>
+                            <option>History</option>
+                            <option>Technology</option>
+                            <option>Education</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Publisher</label>
+                        <input type="text" id="publisher"
+                        placeholder="Enter Publisher" required>
+                    </div>
+
+                    <div>
+                        <label>Publication Year</label>
+                        <input type="number" id="year"
+                        placeholder="Enter Year" min="1" required>
+                    </div>
+
+                    <div>
+                        <label>Quantity</label>
+                        <input type="number" id="quantity"
+                        placeholder="Enter Quantity" min="1" required>
+                    </div>
+
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    Add Book
+                </button>
+
+                <button type="button" id="cancelBtn"
+                class="cancel-btn" onclick="cancelEdit()">
+                    Cancel
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="table-section">
+
+            <div class="table-heading">
+                <div>
+                    <h2>📖 Book Records</h2>
+                    <p>View and manage all library books</p>
+                </div>
+
+                <input type="text" id="search"
+                placeholder="🔍 Search books...">
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book ID</th>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                            <th>Category</th>
+                            <th>Publisher</th>
+                            <th>Year</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="bookTable">
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+<script src="../javascript/bookmanagement.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f3f4f8;
+    color: #252b40;
+    padding: 25px;
+}
+
+/* Main Container */
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* Header */
+
+header {
+    background: #20243a;
+    color: white;
+    padding: 22px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 13px;
+    color: #c5c9da;
+    margin-top: 5px;
+}
+
+/* Main Content */
+
+main {
+    padding: 30px;
+}
+
+main h2 {
+    font-size: 27px;
+    color: #252b40;
+    margin-bottom: 10px;
+}
+
+main > p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Form */
+
+form {
+    background: #ffffff;
+    border: 1px solid #e2e4ec;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #33394e;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+form input,
+form select {
+    width: 100%;
+    height: 44px;
+    padding: 10px 13px;
+    border: 1px solid #d7d9e3;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+    color: #333;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #6259d9;
+    box-shadow: 0 0 4px rgba(98,89,217,0.2);
+}
+
+form input[readonly] {
+    background: #f0f1f5;
+    cursor: not-allowed;
+}
+
+/* Buttons */
+
+button {
+    border: none;
+    padding: 13px 25px;
+    margin-top: 25px;
+    margin-right: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background: #6259d9;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #4840b5;
+}
+
+button[type="reset"] {
+    background: #e5e6ed;
+    color: #333;
+}
+
+button[type="reset"]:hover {
+    background: #d0d2dc;
+}
+
+/* Message */
+
+#message {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#message.success {
+    background: #d9f5e4;
+    color: #18743d;
+    padding: 13px;
+    border-radius: 6px;
+}
+
+#message.error {
+    background: #ffe0e0;
+    color: #c62828;
+    padding: 13px;
+    border-radius: 6px;
+}
+
+/* Issued Books Table */
+
+main h3 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #252b40;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    min-width: 700px;
+}
+
+table thead {
+    background: #20243a;
+    color: white;
+}
+
+table th {
+    padding: 15px 12px;
+    font-size: 13px;
+    text-align: center;
+}
+
+table td {
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+table tbody tr:hover {
+    background: #f5f5ff;
+}
+
+/* Footer */
+
+footer {
+    background: #20243a;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Responsive */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 10px;
+    }
+
+    main {
+        padding: 18px;
+    }
+
+    header {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    button {
+        padding: 11px 18px;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}
